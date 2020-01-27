@@ -190,13 +190,14 @@ server <- function(input, output) {
     data <- dataInput()
     
     ggplot(data, aes(x=Player, y=AST)) +
-      geom_bar(color="gray",stat = "identity",width=0.2)+
+     geom_bar(color="gray",stat = "identity",width=0.2, )+
       theme_light() +
+      theme(axis.text.x = element_text(angle = 90))+
       xlab("Player")+
       ylab("Average Assists per Game")+
       ggtitle("Average Assists per Game")+
       theme(
-        panel.grid.major.y = element_blank(),
+       panel.grid.major.y = element_blank(),
         panel.border = element_blank(),
         axis.ticks.y = element_blank())
   })
