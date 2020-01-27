@@ -17,9 +17,10 @@ interactively analyze a our dataset. Allowing us to develop our own application 
 to conduct this kind of analysis.
 
 The practical work consists in the following exercises:
+## First exercise: Shiny Tutorial
+[Link to repository.](https://github.com/oussama-talaoui/Big-Data-Visualization)
 
 ## Second exercise: Design of a new interactive data analysis tool
-
 - [X] Proposing our own [dataset](https://www.kaggle.com/noahgift/social-power-nba#nba_2017_br.csv).
 - [ ] Using of 3+ different types of plots.
 - [X] Filtering and aggregation is possible in order for the user to be able to focus on the information he finds more interesting.
