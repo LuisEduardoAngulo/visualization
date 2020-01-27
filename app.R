@@ -156,7 +156,7 @@ server <- function(input, output) {
     data <- dataInput()
     
     ggplot(data, aes(x=Player, y=FG)) +
-      geom_segment(aes(x=Player, xend=Player, y=0, yend=FG), color="grey")+
+      geom_segment(aes(x=Player, xend=Player, y=0, yend=FG), color="grey90")+
       geom_point(color="gray", size=5, fill=alpha("black",0.3), alpha = 0.7, shape = 21, stroke = 2)+
       theme_light() +
       coord_flip()+
@@ -173,7 +173,7 @@ server <- function(input, output) {
     data <- dataInput()
     
     ggplot(data, aes(x=Player, y=PS.G)) +
-      geom_segment(aes(x=Player, xend=Player, y=0, yend=PS.G), color="grey")+
+      geom_segment(aes(x=Player, xend=Player, y=0, yend=PS.G), color="grey90")+
       geom_point(color="gray", size=5, fill=alpha("black",0.3), alpha = 0.7, shape = 21, stroke = 2)+
       theme_light() +
       coord_flip()+
