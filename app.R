@@ -8,7 +8,6 @@ library(plyr)
 
 # Define UI ----
 
-#setwd("C:/Users/leang/OneDrive/Maestría/I Semestre/Visualization/Final assigment/Int_Visualization")
 bd <- read.csv(file = "data/nba_2017_br.csv", header = TRUE, sep = ",")
 
 bd<- bd%>%
