@@ -5,6 +5,7 @@ library(readr)
 library(ggplot2)
 library(dplyr)
 library(plyr)
+library(grDevices)
 
 # Define UI ----
 
@@ -17,6 +18,8 @@ bd<- bd%>%
          FT. = FT.*100)
 bd<-bd%>%
   filter(Tm != "TOT")
+
+bd <- bd[,-1]
 
 ui <- fluidPage (
   titlePanel("NBA Stats - Regular Season 2017"),
@@ -55,7 +58,9 @@ ui <- fluidPage (
                   tabPanel("Average Field Goals per Game",
                            plotOutput("plot5")),
                   tabPanel("Average Points per Game",
-                           plotOutput("plot6"))
+                           plotOutput("plot6")),
+                  tabPanel("Average Assists per Game",
+                           plotOutput("plot7"))
       )
   )
   )
@@ -180,6 +185,21 @@ server <- function(input, output) {
         axis.ticks.y = element_blank())
   })
   
+  output$plot7 <- renderPlot({
+    
+    data <- dataInput()
+    
+    ggplot(data, aes(x=Player, y=AST)) +
+      geom_bar(color="gray",stat = "identity",width=0.2)+
+      theme_light() +
+      xlab("Player")+
+      ylab("Average Assists per Game")+
+      ggtitle("Average Assists per Game")+
+      theme(
+        panel.grid.major.y = element_blank(),
+        panel.border = element_blank(),
+        axis.ticks.y = element_blank())
+  })
 }
 
 # Run the app ----
