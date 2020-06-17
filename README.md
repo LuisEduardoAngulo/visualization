@@ -21,12 +21,13 @@ The practical work consists in the following exercises:
 [Link to repository.](https://github.com/oussama-talaoui/Big-Data-Visualization)
 
 ## Second exercise: Design of a new interactive data analysis tool
+[Link to repository.](https://github.com/oussama-talaoui/visualization)
 - [X] Proposing our own [dataset](https://www.kaggle.com/noahgift/social-power-nba#nba_2017_br.csv).
-- [X] Using of 3+ different types of plots.
+- [x] Using of 3+ different types of plots.
 - [X] Filtering and aggregation is possible in order for the user to be able to focus on the information he finds more interesting.
-- [ ] Using multiple (synchronized) views.
-- [ ] Integration some data analysis algorithm (machine learning).
-- [X] Using specific arrangements for the data under consideration.
+- [x] Using multiple (synchronized) views.
+- [x] Integration some data analysis algorithm (machine learning).
+- [x] Using specific arrangements for the data under consideration.
 - [X] Sharing the applications:
   - [x] Sharing the Shiny app as R scripts.
   - [x] Sharing the Shiny app as a web page using ```runGitHub()```.
