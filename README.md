@@ -30,4 +30,10 @@ The practical work consists in the following exercises:
 - [x] Using specific arrangements for the data under consideration.
 - [X] Sharing the applications:
   - [x] Sharing the Shiny app as R scripts.
-  - [x] Sharing the Shiny app as a web page using ```runGitHub()```.
+  - [x] Sharing the Shiny app as a web page, to run it we use the fellowing commands:
+```R 
+packages = c("shiny", "ggplot2", "readr", "dplyr", "plyr")
+install.packages(packages, repos = "https://cran.rstudio.com/")
+library(shiny)
+runGitHub("visualization", "oussama-talaoui")
+```
